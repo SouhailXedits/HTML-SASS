@@ -225,3 +225,60 @@ ul {
       font-family: 'mont-7OO', sans-serif;
       color: #848484;
       line-height: 1.5; }
+
+.bg-color-core-dev {
+  background-color: #F8F7FF; }
+
+.core-development-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 70px;
+  line-height: 1.5; }
+  .core-development-container__headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .core-development-container__headings__header {
+      font-family: 'mont-700',sans-serif;
+      color: #542B74;
+      font-size: 22px; }
+    .core-development-container__headings__subheader {
+      font-family: 'mont-700',sans-serif;
+      color: #542B74;
+      font-size: 36px; }
+  .core-development-container__body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7.5rem; }
+    .core-development-container__body__illustration {
+      grid-column: 2/4;
+      grid-row: 1/3;
+      justify-self: center;
+      margin-bottom: 3rem; }
+    .core-development-container__body__box {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 6.8rem;
+      align-items: center;
+      padding: 5.2rem;
+      border-radius: 28px;
+      box-shadow: 0px 14px 21px 1px rgba(197, 162, 219, 0.17); }
+      .core-development-container__body__box__icon {
+        width: 5.8rem;
+        height: 5.8rem; }
+      .core-development-container__body__box__text {
+        font-size: 2.2rem;
+        color: #542B74;
+        font-family: 'mont-700', sans-serif;
+        text-align: center; }
+  .core-development-container__cta__btn {
+    background-color: #FFCF2B;
+    color: #28104E;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 2rem 6rem;
+    margin-top: 2rem; }

@@ -273,5 +273,72 @@ ul{
             line-height: 1.5;
         }
     }
-    
+}
+.bg-color-core-dev {
+    background-color: #F8F7FF;
+}
+.core-development-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 70px;
+    line-height: 1.5;
+
+    &__headings{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__header {
+            font-family: 'mont-700',sans-serif;
+            color: $md-dark-purple;
+            font-size: $font-md;
+        }
+        &__subheader {
+            font-family: 'mont-700',sans-serif;
+            color: $md-dark-purple;
+            font-size: $font-xxl;
+        }
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 7.5rem;
+        &__illustration{
+            grid-column: 2/4;
+            grid-row: 1/3;
+            justify-self: center;
+            margin-bottom: 3rem;
+        }
+        &__box {
+            background-color: $color-white;
+            display: flex;
+            flex-direction: column;
+            gap: 6.8rem;
+            align-items: center;
+            padding: 5.2rem;
+            border-radius: $border-radius-box-md;
+            box-shadow: $box-shadow-light;
+            &__icon {
+                width: 5.8rem;
+                height: 5.8rem;
+            }
+            &__text {
+                font-size: 2.2rem;
+                color: $md-dark-purple;
+                font-family: 'mont-700', sans-serif;
+                text-align: center;
+            }
+        }
+    }
+    &__cta__btn {
+        background-color: $yellow;
+        color: $primary;
+        font-size: $font-xs;
+        font-family:  sans-serif;
+        padding: 2rem 6rem;
+        margin-top: 2rem;
+    }
 }
