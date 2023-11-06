@@ -1,0 +1,227 @@
+@import url("https://fonts.cdnfonts.com/css/mont");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden; }
+
+body {
+  font-family: "Mont", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden; }
+
+.container {
+  max-width: 167rem;
+  padding: 0 7rem;
+  margin: 0 auto; }
+
+.btn {
+  border-radius: 62px;
+  padding: 10px 20px; }
+
+@font-face {
+  font-family: 'mont-600';
+  src: url(/assets/Font/Mont/Mont-Book.otf); }
+
+@font-face {
+  font-family: 'mont-500';
+  src: url(/assets/Font/Mont/Mont-Light.otf); }
+
+@font-face {
+  font-family: 'mont-700';
+  src: url(/assets/Font/Mont/Mont-SemiBold.otf); }
+
+@font-face {
+  font-family: 'mont-book';
+  src: url(/assets/Font/Mont/Mont-Book.otf); }
+
+@font-face {
+  font-family: 'mont-book';
+  src: url(/assets/Font/Mont/Mont-Book.otf); }
+
+.corner-design {
+  background-color: #28104E;
+  height: 97rem;
+  width: 63rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 0 0 0 23rem; }
+
+.navbar {
+  margin: 3.2rem 0;
+  padding: 1.7rem 0;
+  background-color: rgba(123, 97, 255, 0.05); }
+  .navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6.7rem; }
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; }
+    .navbar .logo:hover {
+      cursor: pointer; }
+  .navbar .nav-links-container {
+    display: flex;
+    flex-basis: 77%;
+    justify-content: space-between; }
+  .navbar .nav-links {
+    display: flex;
+    gap: 20px; }
+  .navbar .nav-link {
+    display: flex;
+    align-items: center; }
+  .navbar a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 34px;
+    color: #2E193E;
+    font-family: 'poppins'; }
+    .navbar a:hover {
+      color: #B485FF;
+      stroke: #B485FF; }
+      .navbar a:hover .arrow-down {
+        stroke: #B485FF; }
+  .navbar .cta-btn {
+    background-color: #B485FF; }
+    .navbar .cta-btn:hover {
+      background-color: #fff;
+      border: 1px solid #B485FF; }
+  .navbar .btn {
+    padding: 10px 30px;
+    color: #fff; }
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 13rem;
+  margin-top: 15rem; }
+  .hero-section .hero-section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.8rem;
+    align-items: flex-start; }
+  .hero-section .hero-heading-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem; }
+  .hero-section .hero-title {
+    font-family: 'mont-600',sans-serif;
+    font-size: 30px;
+    color: #A166FF;
+    font-style: normal;
+    font-weight: 500; }
+  .hero-section .hero-heading {
+    font-family: 'mont-700', sans-serif;
+    color: #28104E;
+    font-size: 64px;
+    line-height: 1.4; }
+  .hero-section .hero-desciption {
+    color: #28104E;
+    font-size: 22px;
+    font-family: 'mont-500', sans-serif;
+    line-height: 2.5; }
+  .hero-section .hero-illustration {
+    max-width: 70rem;
+    max-height: 70rem; }
+  .hero-section a {
+    color: #28104E;
+    font-size: 2rem;
+    line-height: 1.5;
+    background-color: #FFCF2B;
+    font-family: 'mont-700', sans-serif;
+    padding: 20px 50px; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+.top-section {
+  background-color: rgba(123, 97, 255, 0.05);
+  background-size: inherit;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 136rem;
+  z-index: -2; }
+
+.got-you-covered-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 9rem;
+  gap: 5.7rem; }
+  .got-you-covered-section .got-you-covered__heading-container__header {
+    font-family: 'mont-600', sans-serif;
+    color: #5A3583;
+    font-size: 22px; }
+  .got-you-covered-section .got-you-covered__heading-container__subheader {
+    font-family: 'mont-700', sans-serif;
+    line-height: 2;
+    color: #000;
+    font-size: 36px; }
+  .got-you-covered-section__top-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14.6rem; }
+    .got-you-covered-section__top-boxes__icon {
+      display: flex;
+      background-color: rgba(123, 97, 255, 0.05);
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      padding: 1.6rem; }
+  .got-you-covered-section__top-box {
+    padding: 3.7rem 5.7rem;
+    background-color: #fff;
+    box-shadow: 0px 25px 36px -8px rgba(123, 97, 255, 0.21);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.9rem; }
+    .got-you-covered-section__top-box__text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem; }
+      .got-you-covered-section__top-box__text__header {
+        font-size: 19px;
+        font-style: normal;
+        font-family: 'mont-700', sans-serif; }
+      .got-you-covered-section__top-box__text__description {
+        font-size: 16px;
+        font-family: 'mont-600', sans-serif;
+        color: #848484;
+        line-height: 2; }
+  .got-you-covered-section__bottom-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5.2rem;
+    margin-bottom: 13.6rem;
+    margin-top: 5rem; }
+  .got-you-covered-section__bottom-box {
+    padding: 2.2rem;
+    border: 1px solid #FFCF2B;
+    border-radius: 32px; }
+    .got-you-covered-section__bottom-box__num__text {
+      font-size: 4.8rem;
+      font-family: 'mont-700';
+      color: #774eb0;
+      line-height: 1.5; }
+      .got-you-covered-section__bottom-box__num__text span {
+        color: #B485FF; }
+    .got-you-covered-section__bottom-box__text {
+      font-size: 16px;
+      font-family: 'mont-7OO', sans-serif;
+      color: #848484;
+      line-height: 1.5; }

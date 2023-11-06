@@ -1,0 +1,11 @@
+.container {
+    max-width: 167rem;
+    padding: 0 7rem;
+    margin: 0 auto;
+}
+
+.btn {
+  border-radius: $border-radius-btn;
+  padding: $base-padding $base-padding*2;
+}
+
