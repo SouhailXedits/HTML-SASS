@@ -348,7 +348,7 @@ ul {
   flex-direction: column;
   gap: 8rem;
   padding: 4rem;
-  padding-bottom: 24rem;
+  padding-bottom: 24rem !important;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -383,3 +383,35 @@ ul {
       font-family: sans-serif;
       font-weight: 300;
       padding: 2rem 5rem; }
+
+.floating-cta-container {
+  border-radius: 32px;
+  background: linear-gradient(180deg, #a583d2 -17.86%, #6437a0 138.27%);
+  padding: 5.4rem;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  transform: translateY(-50%); }
+  .floating-cta-container__box {
+    display: flex;
+    align-items: center;
+    gap: 5rem; }
+    .floating-cta-container__box:first-child {
+      padding-right: 5rem;
+      border-right: 1px solid #fff; }
+    .floating-cta-container__box:last-child {
+      padding-left: 5rem; }
+    .floating-cta-container__box__icon {
+      background-color: #e9c5ff;
+      padding: 44px;
+      border-radius: 50%; }
+    .floating-cta-container__box__text {
+      font-family: "mont-600", sans-serif;
+      color: #fff;
+      font-size: 32px; }
+    .floating-cta-container__box__circle {
+      background-color: #64389e;
+      height: 7rem;
+      width: 7rem;
+      border-radius: 50%;
+      cursor: pointer; }
