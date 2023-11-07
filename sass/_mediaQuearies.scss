@@ -1,0 +1,10 @@
+$xl-screen: 2000px;
+$lg-screen: 1600px;
+
+
+
+@media(max-width: $lg-screen) {
+    html {
+        font-size: 56.5% !important;
+    }
+}

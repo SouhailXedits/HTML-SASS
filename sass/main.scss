@@ -15,6 +15,8 @@
 // cards
 @import "cards";
 
+@import 'mediaQuearies';
+
 @font-face {
   font-family: "mont-600";
   src: url(/assets/Font/Mont/Mont-Book.otf);
@@ -46,13 +48,6 @@
   z-index: -1;
   border-radius: 0 0 0 23rem;
 }
-
-// .hero-illustration {
-//     position: absolute;
-//     background-color: transparent;
-//     bottom: 0;
-//     right: 8rem;
-// }
 
 .navbar {
   margin: 3.2rem 0;
@@ -98,14 +93,17 @@
       stroke: $tertiary;
       .arrow-down {
         stroke: $tertiary;
+        transition: $hover-transition;
       }
     }
+    transition: $hover-transition;
   }
   .cta-btn {
     background-color: $tertiary;
+    border: $border-thikness solid $tertiary;
     &:hover {
       background-color: $color-white;
-      border: $border-thikness solid $tertiary;
+      transition: $hover-transition;
     }
   }
   .btn {
@@ -160,8 +158,13 @@
     font-size: 2rem;
     line-height: 1.5;
     background-color: $yellow;
+    border: $border-thikness solid $yellow;
     font-family: "mont-700", sans-serif;
     padding: 20px 50px;
+    &:hover {
+        background-color: transparent;
+        transition: $hover-transition;
+    }
   }
 }
 
@@ -307,11 +310,16 @@ ul {
   }
   &__cta__btn {
     background-color: $yellow;
+    border: $border-thikness solid $yellow;
     color: $primary;
     font-size: $font-xs;
     font-family: sans-serif;
     padding: 2rem 6rem;
     margin-top: 2rem;
+    &:hover {
+        background-color: transparent;
+        transition: $hover-transition;
+    }
   }
 }
 
@@ -384,13 +392,19 @@ ul {
       font-family: sans-serif;
       font-weight: 300;
       padding: 2rem 5rem;
+      &:hover {
+        color: $color-white;
+        background-color: #7c1dc9;
+        transition: $hover-transition;
+      }
+
     }
   }
 }
 
 .floating-cta-container {
   border-radius: $border-radius-box-lg;
-  background: linear-gradient(180deg, #a583d2 -17.86%, #6437a0 138.27%);
+  background: $background-purpel-gr;
   padding: 5.4rem;
   display: flex;
   justify-content: center;
@@ -476,7 +490,7 @@ ul {
     padding-top: 8rem;
     padding-bottom: 5rem;
     &__title {
-        font-family: 'mont-700', sans-serif;
+        font-family: 'mont-800', sans-serif;
         font-size: $font-xxl;
         color: $color-black;
     }
@@ -484,5 +498,108 @@ ul {
         display: flex;
         align-items: center;
         gap: 5rem;
+    }
+}
+.cta-section-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    &__title {
+        font-size: 35px;
+        font-family: 'mont-700', sans-serif;
+        color: $color-black;
+        line-height: 2;
+    }
+    &__subtitle {
+        font-size: $font-xs;
+        font-family: 'mont-600';
+        color: #6C6C6C;
+        line-height: 2;
+    }
+    &__cta-btn {
+        color: $color-white;
+        font-size: $font-sm;
+        font-family: 'mont-600';
+        background: $background-purpel-gr;
+        border: $border-thikness solid #B485FF;
+        padding: 20px 50px;
+        margin-top: 2rem;
+        &:hover {
+            background: none;
+            background-color: #fff;
+            color: #B485FF;
+            transition: $hover-transition;
+            
+        }
+    }
+}
+.footer-hr {
+    width: 60%;
+    display: flex;
+    align-self: center;
+    margin: 3rem auto;
+    border-top: $border-thikness solid #7b61ff;
+}
+
+.bg-color-dark {
+    background-color:#EEEBFF;
+}
+
+
+.footer-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    padding-bottom: 6rem;
+    
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        &__img {
+            height: 47px;
+            width: 47px;
+        }
+        &__text {
+            height: 47px;
+            width: 140px;
+        }
+    }
+    &__linkes-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 7.6rem;
+        width: 100%;
+        &__links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            &__title {
+                font-family: 'mont-700', sans-serif;
+                font-size: $font-md;
+                color: $color-black;
+                line-height: 2;
+            }
+            &__link {
+                font-family: 'mont-700',  sans-serif;
+                font-size: $font-xs;
+                color: #4E4E4E;
+                line-height: 2;
+            }
+
+        }
+    }
+}
+
+.footer-copyright {
+    background-color: #7B61FF;
+    &__text {
+        color: $color-white;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'mont-600', sans-serif;
+        line-height: 3;
     }
 }
