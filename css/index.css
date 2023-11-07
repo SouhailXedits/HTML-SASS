@@ -37,8 +37,8 @@ body {
   src: url(/assets/Font/Mont/Mont-SemiBold.otf); }
 
 @font-face {
-  font-family: "mont-book";
-  src: url(/assets/Font/Mont/Mont-Book.otf); }
+  font-family: "mont-800";
+  src: url(/assets/Font/Mont/Mont-Bold.otf); }
 
 @font-face {
   font-family: "mont-book";
@@ -464,3 +464,19 @@ ul {
         box-shadow: 0 0 24px rgba(139, 118, 167, 0.6);
         transform: translateX(-40px);
         border-left: 5px solid #4e127e; }
+
+.partners-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 8rem;
+  padding-bottom: 5rem; }
+  .partners-section-container__title {
+    font-family: 'mont-700', sans-serif;
+    font-size: 36px;
+    color: #000; }
+  .partners-section-container__body {
+    display: flex;
+    align-items: center;
+    gap: 5rem; }
