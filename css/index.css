@@ -226,7 +226,7 @@ ul {
       color: #848484;
       line-height: 1.5; }
 
-.bg-color-core-dev {
+.bg-color {
   background-color: #f8f7ff; }
 
 .core-development-container {
@@ -329,21 +329,26 @@ ul {
       flex-direction: column;
       gap: 1rem; }
       .recent-projects-container .card__text-container__top-text {
-        font-family: 'mont-600', sans-serif;
+        font-family: "mont-600", sans-serif;
         font-size: 14px;
         color: #7c1dc9; }
       .recent-projects-container .card__text-container__header {
-        font-family: 'mont-700', sans-serif;
+        font-family: "mont-700", sans-serif;
         font-size: 24px;
         color: #000;
         margin-top: 1rem; }
       .recent-projects-container .card__text-container__description {
-        font-family: 'mont-600', sans-serif;
+        font-family: "mont-600", sans-serif;
         font-size: 16px;
         color: #575757;
         line-height: 2.3; }
 
 .methodology-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  padding: 4rem;
+  padding-bottom: 24rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -363,3 +368,18 @@ ul {
       font-family: 'mont-700',sans-serif;
       color: #542B74;
       font-size: 36px; }
+  .methodology-container__headings__header {
+    padding-top: 4rem; }
+  .methodology-container__body {
+    margin-top: 5rem; }
+    .methodology-container__body__image {
+      width: 100%; }
+  .methodology-container__cta {
+    margin-top: 5rem; }
+    .methodology-container__cta__btn {
+      border: 1px solid #a583d2;
+      color: #7c1dc9;
+      font-size: 18px;
+      font-family: sans-serif;
+      font-weight: 300;
+      padding: 2rem 5rem; }
