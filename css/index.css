@@ -25,23 +25,23 @@ body {
   padding: 10px 20px; }
 
 @font-face {
-  font-family: 'mont-600';
+  font-family: "mont-600";
   src: url(/assets/Font/Mont/Mont-Book.otf); }
 
 @font-face {
-  font-family: 'mont-500';
+  font-family: "mont-500";
   src: url(/assets/Font/Mont/Mont-Light.otf); }
 
 @font-face {
-  font-family: 'mont-700';
+  font-family: "mont-700";
   src: url(/assets/Font/Mont/Mont-SemiBold.otf); }
 
 @font-face {
-  font-family: 'mont-book';
+  font-family: "mont-book";
   src: url(/assets/Font/Mont/Mont-Book.otf); }
 
 @font-face {
-  font-family: 'mont-book';
+  font-family: "mont-book";
   src: url(/assets/Font/Mont/Mont-Book.otf); }
 
 .corner-design {
@@ -85,7 +85,7 @@ body {
     font-size: 16px;
     line-height: 34px;
     color: #2E193E;
-    font-family: 'poppins'; }
+    font-family: "poppins"; }
     .navbar a:hover {
       color: #B485FF;
       stroke: #B485FF; }
@@ -116,20 +116,20 @@ body {
     flex-direction: column;
     gap: 3.2rem; }
   .hero-section .hero-title {
-    font-family: 'mont-600',sans-serif;
+    font-family: "mont-600", sans-serif;
     font-size: 30px;
     color: #A166FF;
     font-style: normal;
     font-weight: 500; }
   .hero-section .hero-heading {
-    font-family: 'mont-700', sans-serif;
+    font-family: "mont-700", sans-serif;
     color: #28104E;
     font-size: 64px;
     line-height: 1.4; }
   .hero-section .hero-desciption {
     color: #28104E;
     font-size: 22px;
-    font-family: 'mont-500', sans-serif;
+    font-family: "mont-500", sans-serif;
     line-height: 2.5; }
   .hero-section .hero-illustration {
     max-width: 70rem;
@@ -139,7 +139,7 @@ body {
     font-size: 2rem;
     line-height: 1.5;
     background-color: #FFCF2B;
-    font-family: 'mont-700', sans-serif;
+    font-family: "mont-700", sans-serif;
     padding: 20px 50px; }
 
 a {
@@ -163,11 +163,11 @@ ul {
   padding-top: 9rem;
   gap: 5.7rem; }
   .got-you-covered-section .got-you-covered__heading-container__header {
-    font-family: 'mont-600', sans-serif;
-    color: #5A3583;
+    font-family: "mont-600", sans-serif;
+    color: #5a3583;
     font-size: 22px; }
   .got-you-covered-section .got-you-covered__heading-container__subheader {
-    font-family: 'mont-700', sans-serif;
+    font-family: "mont-700", sans-serif;
     line-height: 2;
     color: #000;
     font-size: 36px; }
@@ -197,10 +197,10 @@ ul {
       .got-you-covered-section__top-box__text__header {
         font-size: 19px;
         font-style: normal;
-        font-family: 'mont-700', sans-serif; }
+        font-family: "mont-700", sans-serif; }
       .got-you-covered-section__top-box__text__description {
         font-size: 16px;
-        font-family: 'mont-600', sans-serif;
+        font-family: "mont-600", sans-serif;
         color: #848484;
         line-height: 2; }
   .got-you-covered-section__bottom-boxes {
@@ -215,19 +215,19 @@ ul {
     border-radius: 32px; }
     .got-you-covered-section__bottom-box__num__text {
       font-size: 4.8rem;
-      font-family: 'mont-700';
+      font-family: "mont-700";
       color: #774eb0;
       line-height: 1.5; }
       .got-you-covered-section__bottom-box__num__text span {
         color: #B485FF; }
     .got-you-covered-section__bottom-box__text {
       font-size: 16px;
-      font-family: 'mont-7OO', sans-serif;
+      font-family: "mont-7OO", sans-serif;
       color: #848484;
       line-height: 1.5; }
 
 .bg-color-core-dev {
-  background-color: #F8F7FF; }
+  background-color: #f8f7ff; }
 
 .core-development-container {
   display: flex;
@@ -242,7 +242,7 @@ ul {
     flex-direction: column;
     align-items: center; }
     .core-development-container__headings__header {
-      font-family: 'mont-700',sans-serif;
+      font-family: 'mont-600',sans-serif;
       color: #542B74;
       font-size: 22px; }
     .core-development-container__headings__subheader {
@@ -273,7 +273,7 @@ ul {
       .core-development-container__body__box__text {
         font-size: 2.2rem;
         color: #542B74;
-        font-family: 'mont-700', sans-serif;
+        font-family: "mont-700", sans-serif;
         text-align: center; }
   .core-development-container__cta__btn {
     background-color: #FFCF2B;
@@ -282,3 +282,84 @@ ul {
     font-family: sans-serif;
     padding: 2rem 6rem;
     margin-top: 2rem; }
+
+.recent-projects-container {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 70px;
+  line-height: 1.5; }
+  .recent-projects-container__headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .recent-projects-container__headings__header {
+      font-family: 'mont-600',sans-serif;
+      color: #542B74;
+      font-size: 22px; }
+    .recent-projects-container__headings__subheader {
+      font-family: 'mont-700',sans-serif;
+      color: #542B74;
+      font-size: 36px; }
+  .recent-projects-container__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8.2rem;
+    width: 100%; }
+  .recent-projects-container .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1.3rem;
+    padding: 7.5px 7.5px 3rem 7.5px;
+    max-width: 44rem; }
+    .recent-projects-container .card:hover {
+      box-shadow: 0px 14px 21px 1px rgba(197, 162, 219, 0.17); }
+    .recent-projects-container .card__image-container {
+      overflow: hidden; }
+      .recent-projects-container .card__image-container__image {
+        width: 100%; }
+    .recent-projects-container .card__text-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem; }
+      .recent-projects-container .card__text-container__top-text {
+        font-family: 'mont-600', sans-serif;
+        font-size: 14px;
+        color: #7c1dc9; }
+      .recent-projects-container .card__text-container__header {
+        font-family: 'mont-700', sans-serif;
+        font-size: 24px;
+        color: #000;
+        margin-top: 1rem; }
+      .recent-projects-container .card__text-container__description {
+        font-family: 'mont-600', sans-serif;
+        font-size: 16px;
+        color: #575757;
+        line-height: 2.3; }
+
+.methodology-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 70px;
+  line-height: 1.5; }
+  .methodology-container__headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .methodology-container__headings__header {
+      font-family: 'mont-600',sans-serif;
+      color: #542B74;
+      font-size: 22px; }
+    .methodology-container__headings__subheader {
+      font-family: 'mont-700',sans-serif;
+      color: #542B74;
+      font-size: 36px; }
