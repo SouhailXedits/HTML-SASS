@@ -13,28 +13,16 @@
 // cards
 @import "cards";
 
+
+//mediaqueries
 @import "mediaQuearies";
 
-@font-face {
-  font-family: "mont-600";
-  src: url(/assets/Font/Mont/Mont-Book.otf);
-}
-@font-face {
-  font-family: "mont-500";
-  src: url(/assets/Font/Mont/Mont-Light.otf);
-}
-@font-face {
-  font-family: "mont-700";
-  src: url(/assets/Font/Mont/Mont-SemiBold.otf);
-}
-@font-face {
-  font-family: "mont-800";
-  src: url(/assets/Font/Mont/Mont-Bold.otf);
-}
-@font-face {
-  font-family: "mont-book";
-  src: url(/assets/Font/Mont/Mont-Book.otf);
-}
+
+//fonts 
+@import 'fonts';
+
+// 
+
 
 .corner-design {
   background-color: $primary;
@@ -517,7 +505,14 @@ ul {
     display: flex;
     align-items: center;
     gap: 5rem;
+    &__partner {
+      filter: grayscale(100%);
+      &:hover {
+        filter: none;
+      }
+    }
   }
+  
 }
 .cta-section-container {
   display: flex;
@@ -529,6 +524,7 @@ ul {
     font-family: "mont-700", sans-serif;
     color: $color-black;
     line-height: 2;
+    margin-top: 80px;
   }
   &__subtitle {
     font-size: $font-xs;

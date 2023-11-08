@@ -568,7 +568,8 @@ ul {
     padding: 7.5px 7.5px 3rem 7.5px;
     max-width: 44rem; }
     .recent-projects-container .card:hover {
-      box-shadow: 0px 14px 21px 1px rgba(197, 162, 219, 0.17); }
+      box-shadow: 0px 14px 21px 1px rgba(197, 162, 219, 0.17);
+      transition: all 0.25s ease-in-out; }
     .recent-projects-container .card__image-container {
       overflow: hidden; }
       .recent-projects-container .card__image-container__image {
@@ -752,6 +753,10 @@ ul {
     display: flex;
     align-items: center;
     gap: 5rem; }
+    .partners-section-container__body__partner {
+      filter: grayscale(100%); }
+      .partners-section-container__body__partner:hover {
+        filter: none; }
 
 .cta-section-container {
   display: flex;
@@ -762,7 +767,8 @@ ul {
     font-size: 35px;
     font-family: "mont-700", sans-serif;
     color: #000;
-    line-height: 2; }
+    line-height: 2;
+    margin-top: 80px; }
   .cta-section-container__subtitle {
     font-size: 16px;
     font-family: "mont-600";
